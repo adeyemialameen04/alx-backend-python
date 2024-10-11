@@ -1,15 +1,13 @@
-#!/usr/bin/env python3
-"""Documenting Module"""
+"""Documenting module"""
 
-# 102-type_checking.py
 from typing import Tuple, List
 
 
-def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
-    """zoom_array"""
-    zoomed_in: List[int] = [
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """Documenting function"""
+    zoomed_in: List = [
         item for item in lst
-        for _ in range(factor)
+        for i in range(factor)
     ]
     return zoomed_in
 
@@ -17,4 +15,5 @@ def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
 array = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
+
 zoom_3x = zoom_array(array, 3)
