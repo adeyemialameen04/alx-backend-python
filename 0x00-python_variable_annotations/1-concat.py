@@ -3,4 +3,5 @@
 
 
 def concat(str1: str, str2: str) -> str:
+    "Documenting function"
     return str1 + str2
